@@ -90,3 +90,5 @@ dir_name = 'D:\\fpr-tpr\\gp_nsga2\\uci\\biodata2'
 ```
 python gp_nsga2_main.py
 ```
+# 结果
+结果保存在pre-recall文件夹下的gp_nsga2machine5.txt文件中
