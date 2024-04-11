@@ -1,0 +1,8 @@
+		pareto_ind_auc		best_auc		ach		distance		dataset
+		0.585		0.8093		0.8399		0.8258		ionosphere
+		0.7776		0.8836		0.8983		0.893		wdbc
+		0.7652		0.8481		0.8626		0.853		sonar
+		0.7798		0.8589		0.8589		0.8653		Leukemia
+		0.847		0.8871		0.8872		0.8922		HillValley
+		0.8425		0.8857		0.8799		0.8906		Colon
+		0.8059		0.8615		0.8615		0.8672		liver-disorders
