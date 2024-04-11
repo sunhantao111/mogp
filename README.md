@@ -5,7 +5,7 @@
 pip install scikit-learn deap matplotlib
 ```
 ## 需要更改的文件
-将已安装好的deap库中的gp.py和base.py替换为mogp文件夹下的gp.py和base.py
+将已安装好的deap库中的gp.py和base.py替换为mogp-main文件夹下的gp.py和base.py
 
 在deap库中的algorithms.py文件中添加nsga2方法：
 ```python
