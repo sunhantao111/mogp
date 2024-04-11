@@ -1,9 +1,12 @@
 # mogp
 使用NSGA-II算法优化三个目标recall，precision，complexity
 ## 需要安装的包
+```
 pip install scikit-learn deap matplotlib
+```
 ## 需要更改的文件
 将已安装好的deap库中的gp.py和base.py替换为mogp文件夹下的gp.py和base.py
+
 在deap库中的algorithms.py文件中添加nsga2方法：
 ```python
 # 自定义NSGA2算法
@@ -78,4 +81,8 @@ def eaNSGA2(population, toolbox, cxpb, mutpb, ngen, npop, stats=None, halloffame
 
     return population,halloffame
 ```
-# 在gp_nsga2_main.py中需要将前两行代码更改为自己的路径
+在gp_nsga2_main.py中需要将前两行代码更改为自己的路径
+```python
+resultspath = 'D:\\fpr-tpr\\gp_nsga2'
+dir_name = 'D:\\fpr-tpr\\gp_nsga2\\uci\\biodata2'
+```
