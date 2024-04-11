@@ -83,8 +83,8 @@ def eaNSGA2(population, toolbox, cxpb, mutpb, ngen, npop, stats=None, halloffame
 ```
 在gp_nsga2_main.py中需要将前两行代码更改为自己的路径
 ```python
-resultspath = 'D:\\fpr-tpr\\gp_nsga2'
-dir_name = 'D:\\fpr-tpr\\gp_nsga2\\uci\\biodata2'
+resultspath = 'D:\\pre-recall\\gp_nsga2'
+dir_name = 'D:\\pre-recall\\gp_nsga2\\uci\\biodata2'
 ```
 # 运行
 ```
