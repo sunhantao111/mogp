@@ -86,3 +86,5 @@ def eaNSGA2(population, toolbox, cxpb, mutpb, ngen, npop, stats=None, halloffame
 resultspath = 'D:\\fpr-tpr\\gp_nsga2'
 dir_name = 'D:\\fpr-tpr\\gp_nsga2\\uci\\biodata2'
 ```
+# 运行
+python gp_nsga2_main.py
