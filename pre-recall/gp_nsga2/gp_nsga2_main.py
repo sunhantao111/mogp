@@ -11,8 +11,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 from func_tools import *
 
-resultspath = 'D:\\fpr-tpr\\gp_nsga2'
-dir_name = 'D:\\fpr-tpr\\gp_nsga2\\uci\\biodata2'
+resultspath = 'D:\\pre-recall\\gp_nsga2'
+dir_name = 'D:\\pre-recall\\gp_nsga2\\uci\\biodata2'
 
 # all_fronts = []  # 存储每一次的front
 # all_fitnesses = []  # 存储特征数和正确率
