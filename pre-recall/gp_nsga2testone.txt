@@ -1,2 +1,0 @@
-pareto_ind_auc		best_auc		ach			distance		dataset
-0.7288				0.8578			0.8719		0.861			ionosphere
