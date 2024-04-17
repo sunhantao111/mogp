@@ -28,6 +28,7 @@ best_pop3 = []
 first_best_ensembles_auc = []
 second_best_ensembles_auc = []
 third_best_ensembles_auc = []
+selected_feature_list = []
 #file_container = ["ionosphere","wdbc","sonar","Leukemia","HillValley","Colon","liver-disorders"]
 file_container = ['GSE14728','GSE14728','GSE30464','GSE42408', 'GSE46205','GSE76613', 'GSE145709']
 #file_container = ["ionosphere","wdbc","sonar","Leukemia","HillValley"]
@@ -168,6 +169,7 @@ with open(resultspath + 'machine5.txt', 'a') as f:
             best_ind = find_individual(pareto_first_front,pset)
             select_features = len(count_selected_feat(best_ind, pset))
             feature_list.append(select_features)
+            selected_feature_list.append(count_selected_feat(best_ind, pset))
 
 
             # 寻找最优个体方法2
@@ -289,7 +291,7 @@ with open(resultspath + 'machine5.txt', 'a') as f:
         # 写入结果
         f.write(str(round(best_auc,4))+'\t\t\t\t\t'+str(round(ave_best_pop,4))
                 +'\t\t\t\t\t\t'+str(feat_num)+'\t\t\t\t\t\t\t'+str((round(ave_select_features,4)))
-                 +'\t\t\t\t\t\t\t'+file_name+'\n')
+                 +'\t\t\t\t\t\t\t'+file_name+'\n'+'selected_features:'+'\t\t\t'+str(selected_feature_list)+'\n')
         f.flush()
 
         # 格式化所有存储结果的list
@@ -301,6 +303,8 @@ with open(resultspath + 'machine5.txt', 'a') as f:
         del first_best_ensembles_auc[:]
         del second_best_ensembles_auc[:]
         del third_best_ensembles_auc[:]
+        del selected_feature_list[:]
+        del feature_list[:]
 
 
         # #全部最优解pareto排序之前
@@ -339,3 +343,4 @@ with open(resultspath + 'machine5.txt', 'a') as f:
         # 图形化显示
         # graph(fitness_first_paretofront, file_name)
     f.close()
+
